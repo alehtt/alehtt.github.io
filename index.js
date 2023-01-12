@@ -18,16 +18,6 @@ var skills = ["HTML", "CSS", "JS", "Drive"];
 // skillsEl.innerHTML += "<li>" + skills[2] + "</li>";
 
 var skillsHTML = " ";
-var i = 0;
-
-// skillsHTML += "<li>" + skills[i] + "</li>";
-// i++;
-// skillsHTML += "<li>" + skills[i] + "</li>";
-// i++;
-// skillsHTML += "<li>" + skills[i] + "</li>";
-// i++;
-// skillsHTML += "<li>" + skills[i] + "</li>";
-// i++;
 
 for (var i = 0; i < skills.length; i++) {
   skillsHTML += "<li>" + skills[i] + "</li>";
