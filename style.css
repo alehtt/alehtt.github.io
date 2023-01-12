@@ -1,0 +1,98 @@
+header,
+footer,
+#content {
+  padding: 4px;
+  margin: 2px;
+  border: 5px solid rgb(232, 186, 186);
+  background-color: rgb(199, 179, 208);
+}
+#content > div,
+#side-menu > section {
+  padding: 4px;
+  margin: 2px;
+  border: 2px solid rgb(135, 7, 232);
+}
+
+#side-menu > section {
+  border-color: rgb(87, 32, 87);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #f3f2ef;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#side-menu {
+  flex: 1;
+}
+
+#main {
+  flex: 2;
+}
+
+td {
+  color: rgb(80, 2, 152);
+  border-color: rgb(235, 159, 201);
+}
+
+#subscriber-Email {
+  background-color: rgb(245, 224, 224);
+}
+
+#subscriber {
+  background-color: rgb(245, 224, 224);
+}
+
+#job-title {
+  text-align: center;
+  color: rgb(202, 59, 149);
+}
+.favorite {
+  font-weight: bold;
+  color: rgb(148, 85, 154);
+}
+
+.page {
+  border-radius: 10px;
+  border: 1px solid #e0dfdc;
+  background-color: #f0dfec;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+}
+
+#top-menu-bar {
+  text-align: center;
+  background-color: rgb(212, 143, 155);
+  color: black;
+}
+
+#top-menu-bar li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#top-menu-bar a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 8px;
+  display: inline-block;
+}
+
+#top-menu-bar a:hover {
+  color: black;
+  background: #f3f2ef;
+}
