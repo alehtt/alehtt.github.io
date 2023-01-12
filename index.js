@@ -9,12 +9,14 @@ for (var i = 0; i < skills.length; i++) {
 }
 
 skillsEl.innerHTML = skillsHTML;
+var pageIds = ["home", "skills", "languages", "projects"];
+
+function hidePage(id) {
+  hide(id);
+}
 
 function hideAllPages() {
-  hide("home");
-  hide("skills");
-  hide("projects");
-  hide("languages");
+  pageIds.forEach(hidePage);
 }
 function show(id) {
   document.getElementById(id).style.display = "block";
