@@ -26,21 +26,15 @@ function hide(id) {
   document.getElementById(id).style.display = "none";
 }
 
-function displayHome() {
-  hideAllPages();
-  show("home");
-}
-function displaySkills() {
-  hideAllPages();
-  show("skills");
-}
 function displayLanguages() {
-  hideAllPages();
-  show("languages");
+  displayPage("languages");
 }
 function displayProjects() {
+  displayPage("projects");
+}
+function displayPage(id) {
   hideAllPages();
-  show("projects");
+  show(id);
 }
 
-displayHome();
+displayPage("home");
