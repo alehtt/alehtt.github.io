@@ -11,14 +11,19 @@ for (var i = 0; i < skills.length; i++) {
 skillsEl.innerHTML = skillsHTML;
 
 function hideAllPages() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("languages").style.display = "none";
+  hide("home");
+  hide("skills");
+  hide("projects");
+  hide("languages");
 }
 function show(id) {
   document.getElementById(id).style.display = "block";
 }
+
+function hide(id) {
+  document.getElementById(id).style.display = "none";
+}
+
 function displayHome() {
   hideAllPages();
   show("home");
@@ -35,4 +40,5 @@ function displayProjects() {
   hideAllPages();
   show("projects");
 }
+
 displayHome();
